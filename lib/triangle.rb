@@ -26,10 +26,10 @@ class Triangle
         solution_array << false
       end
       raise TriangleError if solution_array.include?(false)
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
+    #  begin
+    #   raise TriangleError
+     #  rescue TriangleError => error
+    #       puts error.message
       end
   end
   
