@@ -22,7 +22,7 @@ class Triangle
   #  @side_one <= 0 || @side_two <= 0 || @side_three <= 0 || ((@side_one + @side_two) < @side_three) || ((@side_one + @side_three) < @side_two) || ((@side_two + @side_three) < @side_one)
     solution_array = [(@side_one + @side_two > @side_three), (@side_two + @side_three > @side_one), (@side_one + @side_three > @side_two)]
     solution_array.each do |i|
-      if i = 0
+      if i == 0
         solution_array << false
       end
       raise TriangleError if solution_array.include?(false)
